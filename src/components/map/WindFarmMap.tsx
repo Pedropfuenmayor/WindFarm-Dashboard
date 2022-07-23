@@ -37,7 +37,6 @@ export default function WindFarmMap() {
     display: "flex",
   });
 
-  console.log(matches)
   return (
     <Grid item md={6} xs={12}>
       <Box

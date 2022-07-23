@@ -7,6 +7,7 @@ import {
   LabelProps,
 } from "recharts";
 import { Box, Typography } from "@mui/material";
+import { useState } from "react";
 
 
 const data = [
@@ -33,6 +34,7 @@ const data = [
 ];
 
 export default function UnderperformanceContributors() {
+    const [yaxisWidth,styaxisWidth] = useState(190)
   const renderCustomBarLabel = ({ x, y, width, value }: LabelProps) => {
     x = +x!;
     width = +width!;
@@ -87,7 +89,7 @@ export default function UnderperformanceContributors() {
           margin={{
             top: 10,
             right: 70,
-            left: 120,
+            left: 0,
             bottom: 10,
           }}
         >
@@ -106,7 +108,7 @@ export default function UnderperformanceContributors() {
             type="category"
             tickLine={false}
             interval={0}
-            tick={{width:15}}
+            width={yaxisWidth} 
           />
           <Bar
             barSize={15}

@@ -3,6 +3,7 @@ import Header from "./Header";
 import Indicators from "./indicator/Indicators";
 import WindFarmMap from "./map/WindFarmMap";
 import FarmPerfChart from "./perf-chart/FarmPerfChart";
+import UnderPerfLogs from "./under-perf-logs/UnderPerfLogs";
 
 
 
@@ -14,6 +15,7 @@ export default function WindFarmOverview() {
         <Indicators />
         <WindFarmMap />
         <FarmPerfChart />
+        <UnderPerfLogs />
       </Grid>
     </Container>
   );
