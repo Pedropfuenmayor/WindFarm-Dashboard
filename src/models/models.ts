@@ -6,6 +6,7 @@ export interface Turbine {
 }
 
 export interface IndicatorBoxProps {
+    color: string;
     tittle: string;
     value: number;
     simbol?: string;
