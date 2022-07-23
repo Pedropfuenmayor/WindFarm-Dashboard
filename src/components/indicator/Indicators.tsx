@@ -4,13 +4,13 @@ import { Grid } from "@mui/material";
 export default function Indicators() {
   return (
     <Grid item xs={12}>
-      <Grid container spacing={2}>
-      <IndicatorBox tittle="Active Turbines" value={18} color='green' simbol=' '  />
-      <IndicatorBox tittle="Active Nominal Power" value={18} color='green' simbol='MW' />
-      <IndicatorBox tittle="Total Production" value={18} color='green' simbol='TW' />
-      <IndicatorBox tittle="Avg. Potential Improve..." value={18} color='green' simbol='%' />
-      <IndicatorBox tittle="Potential Improvement(h)" value={18} color='green' simbol='Hours' />
-      <IndicatorBox tittle="Underperformance Rate %" value={18} color='red' simbol='%' />
+      <Grid container spacing={1.5}>
+      <IndicatorBox tittle="Active Turbines" value={18} color='green' fontSize='3rem' simbol=' '  />
+      <IndicatorBox tittle="Active Nominal Power" value={36} color='green' fontSize='3rem' simbol='MW' />
+      <IndicatorBox tittle="Total Production" value={13.0} color='green' fontSize='3rem' simbol='TW' />
+      <IndicatorBox tittle="Avg. Potential Improve..." value={5.9} color='green' fontSize='3rem' simbol='%' />
+      <IndicatorBox tittle="Potential Improvement(h)" value={1253} color='green' fontSize='2rem' simbol='hrs.' />
+      <IndicatorBox tittle="Underperformance Rate %" value={11} color='red' fontSize='2rem' simbol='%' />
       </Grid>
     </Grid>
   );

@@ -10,6 +10,7 @@ export interface IndicatorBoxProps {
     tittle: string;
     value: number;
     simbol?: string;
+    fontSize: string;
   }
 
   export interface TurbineFilterFormat{

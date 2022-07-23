@@ -8,7 +8,8 @@ export default function IndicatorBox({
   tittle,
   value,
   simbol,
-  color
+  color,
+  fontSize
 }: IndicatorBoxProps) {
 
 const Span = styled("span")({
@@ -47,10 +48,11 @@ const Span = styled("span")({
         <Typography
           sx={{
             paddingY: "1rem",
-            fontSize: "3rem",
+            fontSize: fontSize,
             lineHeight: "1rem",
             fontWeight: 700,
             color: color === "green"? "#4cb373" : 'red',
+            margin:'0px'
           }}
           variant="subtitle1"
           gutterBottom

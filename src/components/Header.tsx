@@ -20,6 +20,7 @@ export default function Header({ children }: { children: React.ReactNode }) {
             lineHeight: "1.75rem",
             fontWeight: 700,
             paddingLeft: "1rem",
+            margin:'0px'
           }}
           className="py-2 pl-4 font-bold text-xl m-0"
           variant="h2"
