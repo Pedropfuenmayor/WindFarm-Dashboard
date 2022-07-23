@@ -2,6 +2,7 @@ import { Container, Grid } from "@mui/material";
 import Header from "./Header";
 import Indicators from "./indicator/Indicators";
 import WindFarmMap from "./map/WindFarmMap";
+import FarmPerfChart from "./perf-chart/FarmPerfChart";
 
 
 
@@ -12,6 +13,7 @@ export default function WindFarmOverview() {
         <Header>ANNEA - Dashboard</Header>
         <Indicators />
         <WindFarmMap />
+        <FarmPerfChart />
       </Grid>
     </Container>
   );

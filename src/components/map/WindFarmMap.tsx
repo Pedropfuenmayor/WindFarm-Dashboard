@@ -48,7 +48,7 @@ export default function WindFarmMap() {
           backgroundColor: "white",
           borderRadius: "0.25rem",
           boxShadow: 1,
-          height: matches ? "350px" : "100%",
+          height: matches ? "100%" : "350px",
         }}
       >
         <Stack sx={{ height: "100%" }}>
