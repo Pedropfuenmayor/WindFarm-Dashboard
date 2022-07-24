@@ -1,5 +1,4 @@
-import { Grid} from "@mui/material";
-import { Turbine } from "../../models/models";
+import { Grid} from "@mui/material"
 import StackedBarChart from "./StackedBarChart";
 import UnderperformanceContributors from "./UnderperfContributors";
 

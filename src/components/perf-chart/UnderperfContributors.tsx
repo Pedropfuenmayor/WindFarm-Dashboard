@@ -34,7 +34,8 @@ const data = [
 ];
 
 export default function UnderperformanceContributors() {
-    const [yaxisWidth,styaxisWidth] = useState(190)
+    const [yaxisWidth] = useState(0)
+    const [yaxisTotalWidth] = useState(190)
   const renderCustomBarLabel = ({ x, y, width, value }: LabelProps) => {
     x = +x!;
     width = +width!;
@@ -63,7 +64,7 @@ export default function UnderperformanceContributors() {
         borderRadius: "0.25rem",
         boxShadow: 1,
         height: '150px',
-        marginTop:'16px'
+        marginTop:'10px'
       }}> 
       <Typography
         sx={{
@@ -89,7 +90,7 @@ export default function UnderperformanceContributors() {
           margin={{
             top: 10,
             right: 70,
-            left: 0,
+            left: -18,
             bottom: 10,
           }}
         >
@@ -108,7 +109,9 @@ export default function UnderperformanceContributors() {
             type="category"
             tickLine={false}
             interval={0}
-            width={yaxisWidth} 
+            tickMargin={yaxisWidth}
+            width={yaxisTotalWidth}
+            
           />
           <Bar
             barSize={15}

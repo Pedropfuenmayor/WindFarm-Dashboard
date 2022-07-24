@@ -11,7 +11,7 @@ const Map = () => {
       center={anneaOffice}
       zoom={14}
       scrollWheelZoom={false}
-      style={{ margin: "auto", height: "90%", width: "90%" }}
+      style={{ margin: "auto", height: "90%", width: "95%" }}
     >
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'

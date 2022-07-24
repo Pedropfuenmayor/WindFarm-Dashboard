@@ -14,11 +14,12 @@ function createData(date: string, variable: number, underperformace: number) {
 
 const rows = [
   createData("2017-1-03", 4, 1000),
-  createData("2017-1-03", 4, 466),
-  createData("2017-1-03", 4, 300),
-  createData("2017-1-03", 4, 689),
-  createData("2017-1-03", 4, 245),
+  createData("2017-2-03", 4, 466),
+  createData("2017-3-03", 4, 300),
+  createData("2017-4-03", 4, 689),
+  createData("2017-5-03", 4, 245),
 ];
+
 export default function UnderPerfTable() {
   return (
     <Box
@@ -46,14 +47,31 @@ export default function UnderPerfTable() {
         Underperformace Logs
       </Typography>
       <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 350}} aria-label="simple table">
-          <TableHead >
-            <TableRow >
-              <TableCell align='center'>Date</TableCell>
-              <TableCell align='center'>
+        <Table sx={{ minWidth: 350 }} size="small" aria-label="simple table">
+          <TableHead
+            sx={{ backgroundColor: "#e3f2fd", textDecorationColor: "#64b5f6" }}
+          >
+            <TableRow
+              sx={{
+                backgroundColor: "#e3f2fd",
+                textDecorationColor: "#64b5f6",
+              }}
+            >
+              <TableCell
+                sx={{ color: "#42a5f5", width: "100px", height: "32px" }}
+                align="center"
+              >
+                Date
+              </TableCell>
+              <TableCell
+                sx={{ color: "#42a5f5", width: "60px" }}
+                align="center"
+              >
                 <WarningAmberRounded />
               </TableCell>
-              <TableCell align='center'>Underperformance</TableCell>
+              <TableCell sx={{ color: "#42a5f5" }} align="center">
+                Underperformance
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -62,14 +80,23 @@ export default function UnderPerfTable() {
                 key={row.date}
                 sx={{
                   "&:last-child td, &:last-child th": { border: 0 },
-
+                  width: "100px",
                 }}
               >
-                <TableCell align='center' component="th" scope="row">
+                <TableCell align="center" component="th" scope="row">
                   {row.date}
                 </TableCell>
-                <TableCell align='center'>{row.variable}</TableCell>
-                <TableCell align='center' >{row.underperformace}</TableCell>
+                <TableCell
+                  sx={{
+                    backgroundColor: "#d62839",
+                    color: "white",
+                    fontWeight: 500,
+                  }}
+                  align="center"
+                >
+                  {row.variable}
+                </TableCell>
+                <TableCell align="center">{row.underperformace}</TableCell>
               </TableRow>
             ))}
           </TableBody>

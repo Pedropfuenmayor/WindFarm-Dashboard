@@ -33,7 +33,7 @@ export default function WindFarmMap() {
   const matches = useMediaQuery(theme.breakpoints.up("md"));
   const MapContainer = styled("div")({
     height: "100%",
-    marginTop: "-0.5rem",
+    marginTop: "-0.7rem",
     display: "flex",
   });
 
@@ -57,6 +57,7 @@ export default function WindFarmMap() {
               lineHeight: "1.5rem",
               fontWeight: 500,
               paddingTop: "0.5rem",
+              margin:0
             }}
             variant="h2"
             gutterBottom
