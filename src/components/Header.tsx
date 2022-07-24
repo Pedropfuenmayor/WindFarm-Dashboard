@@ -1,34 +1,36 @@
-import { Typography, Grid, Box } from "@mui/material";
+import { Box, Typography, Grid, useTheme, useMediaQuery } from "@mui/material";
+import { Window, StarBorder, ShareOutlined} from "@mui/icons-material";
 
-export default function Header({ children }: { children: React.ReactNode }) {
+export default function Header() {
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.up("sm"));
   return (
-    <Grid item xs={12}>
+    <Grid item sm={12} >
       <Box
         sx={{
           margin: "auto",
-          marginTop: "5rem",
-          border: "1px",
-          backgroundColor: "white",
-          borderRadius: "0.25rem",
-          boxShadow: 1,
+          marginTop: "1rem",
+          display: "flex",
+          alignItems: 'center'
         }}
       >
+        <Window style={{ fontSize: matches ? 16: 12}}/>
         <Typography
           sx={{
-            paddingY: "0.5rem",
-            fontSize: "1.25rem",
-            lineHeight: "1.75rem",
-            fontWeight: 700,
-            paddingLeft: "1rem",
-            margin:'0px'
+            fontSize: matches ? "0.9rem": '0.7rem',
+            lineHeight: "1.25rem",
+            fontWeight: 500,
+            margin: "0px",
+            paddingLeft:'5px'
           }}
-          className="py-2 pl-4 font-bold text-xl m-0"
           variant="h2"
           gutterBottom
           component="div"
         >
-          {children}
+          ANNEA / Underperformance Dashboard (level 1)
         </Typography>
+        <StarBorder style={{ fontSize: matches ? 16: 12, marginLeft:10}}/>
+        <ShareOutlined style={{ fontSize: matches ? 16: 12, marginLeft:10}}/>
       </Box>
     </Grid>
   );

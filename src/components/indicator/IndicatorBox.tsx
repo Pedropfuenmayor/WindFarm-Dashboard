@@ -21,22 +21,25 @@ const Span = styled("span")({
     <Grid item md={2} sm={4} xs={6}>
       <Box
         sx={{
-          paddingX: "0.5rem",
+          height:'80px',
           textAlign: "center",
           borderWidth: "1px",
           backgroundColor: "white",
           borderRadius: "0.25rem",
           boxShadow:1,
+          display: 'flex',
+          flexDirection:'column',
+          justifyContent: 'space-around'
         }}
       >
 
         <Typography
           sx={{
-            paddingTop: "0.5rem",
+            paddingTop: "",
             fontSize: "0.8rem",
             lineHeight: "1.25rem",
             fontWeight: 500,
-            height:'40px'
+            margin:'0px'
           }}
           variant="h2"
           gutterBottom
@@ -47,7 +50,6 @@ const Span = styled("span")({
 
         <Typography
           sx={{
-            paddingY: "1rem",
             fontSize: fontSize,
             lineHeight: "1rem",
             fontWeight: 700,

@@ -29,6 +29,9 @@ export default function UnderPerfTable() {
         borderRadius: "0.25rem",
         boxShadow: 1,
         height: "250px",
+        display: 'flex',
+        flexDirection:'column',
+        justifyContent: 'space-between'
       }}
     >
       <Typography
@@ -38,7 +41,7 @@ export default function UnderPerfTable() {
           fontWeight: 500,
           paddingTop: "0.5rem",
           margin: "0px",
-          textAlign: "center",
+          textAlign: "center"
         }}
         variant="h2"
         gutterBottom
