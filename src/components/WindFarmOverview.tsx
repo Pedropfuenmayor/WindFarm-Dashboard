@@ -4,7 +4,7 @@ import WindFarmMap from "./map/WindFarmMap";
 import FarmPerfChart from "./perf-chart/FarmPerfChart";
 import UnderPerfLogs from "./under-perf-logs/UnderPerfLogs";
 import BreadcrumBox from "./breadcrum/BreadcrumBox";
-import Header from "./Header";
+import Header from "./header/Header";
 
 export default function WindFarmOverview() {
   return (
