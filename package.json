@@ -28,6 +28,7 @@
     "recharts": "^2.1.12"
   },
   "devDependencies": {
+    "@testing-library/cypress": "^8.0.3",
     "@testing-library/dom": "^8.16.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -38,6 +39,7 @@
     "@types/react-dom": "18.0.5",
     "@types/react-leaflet": "^2.8.2",
     "@types/recharts": "^1.8.23",
+    "cypress": "^10.3.1",
     "eslint": "latest",
     "eslint-config-next": "latest",
     "jest": "^28.1.3",

@@ -1,11 +1,12 @@
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import BreadcrumbsComp from "./BreadcrumbsComp";
 
 describe("Breadcrumbs", () => {
   test("render 'Wind Farm Overview'", () => {
-    const { getByText } = render(<BreadcrumbsComp />);
-    const windFarmOverviewLink = getByText(/Wind Farm Overview/i);
-    expect(windFarmOverviewLink).toBeInTheDocument();
+    render(<BreadcrumbsComp />);
+    expect(
+      screen.getByRole("link", { name: /Wind Farm Overview/i })
+    ).toBeInTheDocument();
   });
 
   test("render 'Wind Farm 3'", () => {
