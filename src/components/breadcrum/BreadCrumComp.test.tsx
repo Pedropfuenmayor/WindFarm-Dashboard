@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import BreadcrumbsComp from "./BreadcrumbsComp";
+import '@testing-library/jest-dom'
 
 describe("Breadcrumbs", () => {
   test("render 'Wind Farm Overview'", () => {
