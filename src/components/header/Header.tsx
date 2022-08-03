@@ -27,7 +27,7 @@ export default function Header() {
           gutterBottom
           component="div"
         >
-          ANNEA / Underperformance Dashboard (level 1)
+        Wind Farm / Underperformance Dashboard (level 1)
         </Typography>
         <StarBorder style={{ fontSize: matches ? 16: 12, marginLeft:10}}/>
         <ShareOutlined style={{ fontSize: matches ? 16: 12, marginLeft:10}}/>
