@@ -3,6 +3,6 @@ import Header from './Header';
 
 test("render Header", () => {
   render(<Header />);
-  const headerElement = screen.getByText(/annea/i);
+  const headerElement = screen.getByText(/Wind Farm/i);
   expect(headerElement).toBeInTheDocument();
 });
