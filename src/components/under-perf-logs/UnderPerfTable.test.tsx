@@ -2,9 +2,9 @@ import { render } from "@testing-library/react";
 import UnderPerfTable from "./UnderPerfTable";
 
 describe("Underperformace Table", () => {
-  test("render Underperformace Tabl ", () => {
-    const {getByRole} = render(<UnderPerfTable />);
-    const underperfTable = getByRole('table')
+  test("render Underperformace Table", () => {
+    const { getByText } = render(<UnderPerfTable />);
+    const underperfTable = getByText(/Underperformace Logs/i);
     expect(underperfTable).toBeInTheDocument();
   });
-})
+});
