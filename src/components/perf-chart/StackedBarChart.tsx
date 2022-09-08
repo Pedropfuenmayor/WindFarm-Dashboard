@@ -291,7 +291,6 @@ export default function StackedBarChart() {
         Performace & Underperformace
       </Typography>
       <ResponsiveContainer width="100%" height="90%">
-        <>
         <BarChart
           width={500}
           height={600}
@@ -325,7 +324,6 @@ export default function StackedBarChart() {
           <Bar dataKey="Under_Perf" stackId="a" fill="#e9c46a" />
           <Bar dataKey="Performance" stackId="a" fill="#4cb373"/>
         </BarChart>
-        </>
       </ResponsiveContainer>
     </Box>
   );
