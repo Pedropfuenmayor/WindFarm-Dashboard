@@ -1,6 +1,6 @@
 ## Wind Farm Dashboard
 
-Dashboard for wind turbine data visualization
+Dashboard for wind turbine farm data visualization
 
 Project page [https://windfarm-dashboard.vercel.app/](https://windfarm-dashboard.vercel.app/)
 
